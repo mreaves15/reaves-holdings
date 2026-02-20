@@ -40,7 +40,7 @@ const steps = [
 const faqs = [
   {
     q: 'How fast can you close?',
-    a: 'As fast as 2 weeks from the time you accept the offer. We use cash, so there\'s no waiting on banks or financing. If you need more time, we\'re flexible — we close on your timeline.',
+    a: 'As fast as 14 days from the time you accept the offer. We use cash, so there\'s no waiting on banks or financing. If you need more time, we\'re flexible — we close on your timeline.',
   },
   {
     q: 'Do I need a realtor?',
@@ -82,10 +82,10 @@ export default function HowItWorksPage() {
             Clear &amp; Simple
           </p>
           <h1 className="font-serif text-4xl sm:text-5xl font-bold text-charcoal mb-4">
-            How It Works
+            How Selling Your Land Works
           </h1>
           <p className="text-charcoal/65 text-lg max-w-2xl mx-auto">
-            Selling your land doesn&apos;t have to be complicated. Here&apos;s exactly what to expect when you work with Reaves Holdings.
+            No realtors, no listings, no waiting. Here&apos;s exactly what happens when you sell your land to Reaves Holdings — from first contact to cash in hand.
           </p>
         </div>
       </section>
@@ -172,10 +172,10 @@ export default function HowItWorksPage() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="tel:+1XXXXXXXXXX"
+                href="tel:+13525550100"
                 className="bg-gold hover:bg-gold-dark text-white px-7 py-3 rounded-xl font-semibold transition-colors"
               >
-                📞 Call (XXX) XXX-XXXX
+                📞 Call (352) 555-0100
               </a>
               <Link
                 href="/sell"

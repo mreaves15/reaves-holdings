@@ -6,7 +6,7 @@ export async function POST(request: NextRequest) {
 
     // Log the submission (placeholder — replace with email/CRM integration later)
     console.log('=== New Contact Form Submission ===');
-    console.log('Name:', data.firstName, data.lastName);
+    console.log('Name:', data.name);
     console.log('Phone:', data.phone);
     console.log('Email:', data.email);
     console.log('Address:', data.address);

@@ -2,26 +2,26 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'About Us | Reaves Holdings',
+  title: 'About Us | Reaves Holdings — Florida Land Buyers',
   description:
-    'Reaves Holdings is a Florida-based, family-operated land investment company helping landowners convert unused property into cash quickly and hassle-free.',
+    'Reaves Holdings is run by Matt Reaves — a Florida-based land buyer helping landowners sell vacant property for cash with zero fees and fast closings.',
 };
 
 const values = [
   {
     icon: '🤝',
-    title: 'Fair Offers',
-    body: 'We research every property thoroughly and make offers based on real market data. We want the deal to work for both sides.',
+    title: 'Fair, Transparent Offers',
+    body: 'We show you the comparable sales we used and explain exactly how we arrived at our number. No games, no lowballing — just real data.',
   },
   {
     icon: '⚡',
-    title: 'Fast Closings',
-    body: 'We close with cash, which means no financing delays. We can close in as little as 2 weeks — or on your timeline.',
+    title: 'Close in 14 Days, Not 14 Months',
+    body: 'We close with cash. No financing contingencies, no bank delays. Pick your closing date and we make it happen.',
   },
   {
     icon: '💬',
-    title: 'Honest Communication',
-    body: 'No runaround, no confusing jargon. We tell you exactly what we\'re offering and why. Straight talk, every time.',
+    title: 'Straight Talk, Every Time',
+    body: 'No confusing jargon, no pressure tactics, no "limited-time" nonsense. We give you a fair offer and let you decide on your own time.',
   },
 ];
 
@@ -32,7 +32,7 @@ export default function AboutPage() {
       <section className="pt-28 pb-14 bg-warm-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">
-            Our Story
+            Meet the Person Behind the Offer
           </p>
           <h1 className="font-serif text-4xl sm:text-5xl font-bold text-charcoal">
             About Reaves Holdings
@@ -48,20 +48,20 @@ export default function AboutPage() {
             <div className="lg:col-span-3">
               <div className="bg-white rounded-2xl p-8 lg:p-10 shadow-sm border border-black/5">
                 <h2 className="font-serif text-2xl sm:text-3xl font-bold text-charcoal mb-5">
-                  Florida-Based. Family-Operated.
+                  Hi, I&apos;m Matt Reaves.
                 </h2>
                 <div className="flex flex-col gap-4 text-charcoal/70 leading-relaxed">
                   <p>
-                    Reaves Holdings was founded with a simple mission: make it easy for Florida landowners to sell their vacant land without the hassle of the traditional real estate process.
+                    I started Reaves Holdings because I saw how hard it is to sell vacant land through traditional channels. Realtors don&apos;t want to list it. Buyers are hard to find. And the whole time, you&apos;re still getting tax bills.
                   </p>
                   <p>
-                    We&apos;re a family-operated company based right here in Florida. We understand the land, the counties, and the people. We&apos;ve helped property owners in Putnam, Marion, Highlands, Lee, and other counties throughout the state turn unused parcels into cash — quickly and fairly.
+                    I&apos;m based right here in Florida and work directly with every seller. When you call Reaves Holdings, you get me — not a call center, not an assistant, not a recorded message. I answer the phone, I make the offer, and I see the deal through to closing.
                   </p>
                   <p>
-                    Whether you&apos;ve inherited land you don&apos;t need, have a vacant lot you&apos;ve been paying taxes on for years, or simply want to sell — we&apos;re here to make the process easy.
+                    We specialize in the situations that are hardest to solve on your own: inherited land you didn&apos;t ask for, lots with back taxes piling up, landlocked parcels nobody seems to want, properties stuck in probate. These are the exact situations where we can help the most.
                   </p>
                   <p>
-                    We specialize in the types of land that are harder to sell through traditional channels: landlocked parcels, properties with back taxes, rural acreage, inherited land going through probate. These are the situations where we can help the most.
+                    My goal is simple — give you a fair cash offer, handle all the work, and make it easy for you to move on. If the offer works for you, great. If not, no hard feelings. I&apos;d rather lose a deal than lose someone&apos;s trust.
                   </p>
                 </div>
               </div>
@@ -73,17 +73,15 @@ export default function AboutPage() {
                 <div className="font-serif text-4xl font-bold text-gold mb-1">Florida</div>
                 <div className="text-white/70 text-sm mb-4">Based &amp; Operated</div>
                 <p className="text-white/80 text-sm leading-relaxed">
-                  We know Florida land. We know the counties, the markets, and the challenges local landowners face.
+                  We know the counties, the markets, and the challenges Florida landowners face — because we live here too.
                 </p>
               </div>
 
               <div className="bg-white rounded-2xl p-7 border border-black/5 shadow-sm">
-                <blockquote className="text-charcoal/75 italic leading-relaxed text-sm">
-                  &ldquo;Whether you&apos;ve inherited land you don&apos;t need, have a vacant lot you&apos;ve been paying taxes on for years, or simply want to sell — we&apos;re here to make the process easy.&rdquo;
-                </blockquote>
-                <div className="mt-4 font-semibold text-forest text-sm">
-                  — Reaves Holdings
-                </div>
+                <h4 className="font-semibold text-charcoal mb-3 text-sm">Why Vacant Land?</h4>
+                <p className="text-charcoal/65 text-sm leading-relaxed">
+                  Most land buyers focus on houses. We don&apos;t. Vacant land is all we do — which means we understand the unique challenges sellers face and how to solve them quickly.
+                </p>
               </div>
 
               <div className="bg-gold/10 rounded-2xl p-7 border border-gold/20">
@@ -101,6 +99,16 @@ export default function AboutPage() {
                   ))}
                 </div>
               </div>
+
+              <div className="bg-forest/5 rounded-2xl p-7 border border-forest/10 text-center">
+                <p className="text-charcoal/60 text-sm mb-2">Talk to Matt directly</p>
+                <a
+                  href="tel:+13525550100"
+                  className="text-xl font-bold text-forest hover:text-gold transition-colors"
+                >
+                  📞 (352) 555-0100
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -111,9 +119,9 @@ export default function AboutPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">
-              What We Stand For
+              How We Do Business
             </p>
-            <h2 className="font-serif text-4xl font-bold text-charcoal">Our Values</h2>
+            <h2 className="font-serif text-4xl font-bold text-charcoal">Our Commitments to You</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -135,19 +143,19 @@ export default function AboutPage() {
       <section className="py-20 bg-warm-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">
-            Who We Serve
+            Is This You?
           </p>
           <h2 className="font-serif text-4xl font-bold text-charcoal mb-6">
-            We Help Landowners Like You
+            We Help Landowners Who Are Ready to Move On
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 text-left mb-10">
             {[
-              { icon: '🏡', label: 'Inherited land from a family member and don\'t know what to do with it' },
-              { icon: '💸', label: 'Paying property taxes on land you\'ve never used or visited' },
-              { icon: '📄', label: 'Going through probate or estate settlement and need to liquidate assets' },
-              { icon: '🗺️', label: 'Own a landlocked parcel or land with access challenges' },
-              { icon: '📉', label: 'Tried listing with a realtor but couldn\'t find a buyer' },
-              { icon: '✅', label: 'Simply want a fast, fair, hassle-free sale with cash in hand' },
+              { icon: '🏡', label: 'You inherited land and don\'t know what to do with it' },
+              { icon: '💸', label: 'You\'ve been paying taxes on land you never use or visit' },
+              { icon: '📄', label: 'You\'re settling an estate and need to liquidate property' },
+              { icon: '🗺️', label: 'Your land is landlocked or has access issues' },
+              { icon: '📉', label: 'You tried listing with a realtor but got zero offers' },
+              { icon: '✅', label: 'You just want cash in hand without the hassle' },
             ].map((item) => (
               <div key={item.label} className="flex gap-3 items-start bg-white rounded-xl p-5 border border-black/5 shadow-sm">
                 <span className="text-xl flex-shrink-0 mt-0.5">{item.icon}</span>
@@ -160,7 +168,7 @@ export default function AboutPage() {
             href="/sell"
             className="inline-block bg-gold hover:bg-gold-dark text-white px-10 py-4 rounded-xl text-lg font-bold transition-all shadow-md hover:shadow-lg"
           >
-            Get Your Free Cash Offer →
+            Get My Free Cash Offer →
           </Link>
         </div>
       </section>
