@@ -43,26 +43,7 @@ const steps = [
   },
 ];
 
-const testimonials = [
-  {
-    quote: 'I inherited 5 acres from my father and had no idea what to do with it. Matt made the whole process painless. Had cash in my account in 12 days.',
-    name: 'Sandra M.',
-    location: 'Marion County, FL',
-    placeholder: true,
-  },
-  {
-    quote: 'I\'d been paying taxes on two empty lots for 8 years. Reaves Holdings gave me a fair offer and handled everything. Wish I\'d done this sooner.',
-    name: 'James T.',
-    location: 'Putnam County, FL',
-    placeholder: true,
-  },
-  {
-    quote: 'After 6 months on the MLS with zero offers, I called Matt. He made an offer the next day and we closed in two weeks. No games, no runaround.',
-    name: 'Patricia L.',
-    location: 'Highlands County, FL',
-    placeholder: true,
-  },
-];
+// Testimonials removed — will be replaced with real seller stories after first deals close
 
 const faqs = [
   {
@@ -223,34 +204,35 @@ export default function HomePage() {
 
       {/* ─── SOCIAL PROOF ─── */}
       <section className="py-20 lg:py-28 bg-warm-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">
-              Real Stories
-            </p>
-            <h2 className="font-serif text-4xl lg:text-5xl font-bold text-charcoal">
-              What Our Sellers Say
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((t) => (
-              <div
-                key={t.name}
-                className="bg-white rounded-2xl p-8 shadow-sm border border-black/5 flex flex-col"
-              >
-                <div className="text-gold text-3xl mb-4">&ldquo;</div>
-                <p className="text-charcoal/75 leading-relaxed italic flex-1">
-                  {t.quote}
-                </p>
-                <div className="mt-6 pt-4 border-t border-black/5">
-                  <div className="font-semibold text-charcoal">{t.name}</div>
-                  <div className="text-charcoal/50 text-sm">{t.location}</div>
-                  {/* [PLACEHOLDER] - Replace with real testimonials */}
-                </div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">
+            Our Track Record
+          </p>
+          <h2 className="font-serif text-4xl lg:text-5xl font-bold text-charcoal mb-6">
+            We&apos;re Just Getting Started
+          </h2>
+          <p className="text-charcoal/65 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
+            Reaves Holdings is a new company built on one promise: treat every seller with honesty and respect.
+            We don&apos;t have a wall of reviews yet — but we&apos;d love for your deal to be our first story.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
+            {[
+              { value: '100%', label: 'Cash purchases — no financing delays' },
+              { value: '$0', label: 'Fees or commissions to you — ever' },
+              { value: '24 hrs', label: 'Written offer turnaround time' },
+            ].map((s) => (
+              <div key={s.label} className="bg-white rounded-2xl p-6 shadow-sm border border-black/5">
+                <div className="font-serif text-3xl font-bold text-forest mb-1">{s.value}</div>
+                <div className="text-charcoal/60 text-sm leading-snug">{s.label}</div>
               </div>
             ))}
           </div>
+          <Link
+            href="/sell"
+            className="inline-block bg-forest hover:bg-forest-dark text-white px-8 py-4 rounded-xl text-lg font-bold transition-all shadow-md hover:shadow-lg"
+          >
+            Get the First Offer →
+          </Link>
         </div>
       </section>
 

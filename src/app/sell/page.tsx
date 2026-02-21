@@ -321,16 +321,14 @@ export default function SellPage() {
                   </ul>
                 </div>
 
-                <div className="bg-white rounded-2xl p-7 border border-black/5 shadow-sm">
-                  <div className="text-gold text-2xl mb-2">&ldquo;</div>
-                  <p className="text-charcoal/70 text-sm italic leading-relaxed">
-                    I inherited 5 acres and had no clue what to do. Matt sent me an offer the next day and we closed in 12 days. Couldn&apos;t have been easier.
+                <div className="bg-forest/5 rounded-2xl p-7 border border-forest/10">
+                  <div className="text-forest text-2xl mb-3">🤝</div>
+                  <p className="text-charcoal/75 text-sm leading-relaxed font-medium">
+                    Every deal goes through a licensed Florida title company. Matt works with you directly from first call to closing.
                   </p>
-                  <div className="mt-3 text-sm">
-                    <span className="font-semibold text-charcoal">Sandra M.</span>
-                    <span className="text-charcoal/50"> · Marion County</span>
+                  <div className="mt-4 pt-4 border-t border-forest/10 text-sm text-charcoal/55">
+                    No call centers. No middlemen. No surprises.
                   </div>
-                  {/* [PLACEHOLDER] - Replace with real testimonial */}
                 </div>
               </div>
             </div>
