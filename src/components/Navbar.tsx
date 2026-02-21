@@ -54,7 +54,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav Links */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -69,14 +69,14 @@ export default function Navbar() {
           </div>
 
           {/* Phone + CTA */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-4">
             <a
-              href="tel:+1XXXXXXXXXX"
+              href="tel:+13525550100"
               className={`text-sm font-medium transition-colors ${
                 solid ? 'text-charcoal' : 'text-white/90'
               }`}
             >
-              (XXX) XXX-XXXX
+              (352) 555-0100
             </a>
             <Link
               href="/sell"
@@ -89,7 +89,7 @@ export default function Navbar() {
           {/* Mobile Hamburger */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className={`md:hidden p-2 rounded-lg transition-colors ${
+            className={`lg:hidden p-2 rounded-lg transition-colors ${
               solid ? 'text-charcoal hover:bg-black/5' : 'text-white hover:bg-white/10'
             }`}
             aria-label="Toggle menu"
@@ -117,7 +117,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden transition-all duration-300 overflow-hidden bg-warm-white ${
+        className={`lg:hidden transition-all duration-300 overflow-hidden bg-warm-white ${
           menuOpen ? 'max-h-96 border-t border-black/10' : 'max-h-0'
         }`}
       >
@@ -134,8 +134,8 @@ export default function Navbar() {
             </Link>
           ))}
           <div className="pt-2 border-t border-black/10 flex flex-col gap-3">
-            <a href="tel:+1XXXXXXXXXX" className="text-charcoal font-medium">
-              (XXX) XXX-XXXX
+            <a href="tel:+13525550100" className="text-charcoal font-medium">
+              (352) 555-0100
             </a>
             <Link
               href="/sell"
