@@ -109,7 +109,7 @@ export default function HomePage() {
         {/* Hero content */}
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24 lg:pb-32 text-white">
           <div className="max-w-3xl animate-fade-in-up">
-            <p className="text-gold font-semibold tracking-[0.25em] uppercase text-sm mb-4 animate-fade-in-up-delay-1">
+            <p className="hidden sm:block text-gold font-semibold tracking-[0.25em] uppercase text-sm mb-4 animate-fade-in-up-delay-1">
               Florida Land Buyers · Cash · No Fees
             </p>
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold tracking-wide leading-tight mb-4 animate-fade-in-up-delay-1">
